@@ -460,4 +460,178 @@
 // console.log(nums[1][1]);  // 6
 
 
+// // 25. practise question
+// // It is possible to make changes in nested arrays as well
+// // q1 create a nested array to show tic-tac-toe game state
+// let game = [ ['X',null,'O'],[null,'X',null],['O',null,'X']];
+// console.log(game);    //  [Array(3), Array(3), Array(3)]
+// game[0][1] = 'O';    // replace first array null with O
+// console.log(game);
+
+// 26. Practise questions
+/* Qs1. Write a JavaScript program to get the first n elements of an array. [n can be any
+ positive number].
+ For example: for array [7, 9, 0,-2] and n=3
+ Print, [7, 9, 0] */
+
+//  let array = [7,9,0,-2];
+//  let n = 3;
+//  array.slice(0,n);
+//  console.log(array);   // [7, 9, 0, -2]
+//  console.log(array.slice(0,n)); // [7, 9, 0]
+
+/* Qs2. Write a JavaScript program to get the last n elements of an array. [n can be any
+ positive number].
+ For example: for array [7, 9, 0,-2] and n=3
+ Print, [9, 0,-2] */
+
+//  let array = [7,9,0,-2];
+//  let n = 3;
+//  console.log(array.slice(1,n+1));    // [9, 0, -2]
+
+// OR
+
+// let array = [7,9,0,-2];
+// let n  = 3;
+// let ans  = array.slice(array.length-n);
+// console.log(ans);   // // [9, 0, -2]
+
+/*  Qs3. Write a JavaScript program to check whether a string is blank or not */
+
+// let str = prompt("Please enter a string");
+// if(str.length == 0){
+//     console.log("String is empty");
+// }else{
+//     console.log("String is not empty");
+// }
+
+
+/*  Qs4. Write a JavaScript program to test whether the character at the given (character)
+ index is lower case. */
+// let str = "AbHaY MIttaL";
+// let idx = 3;
+// if(str[idx] == str[idx].toLowerCase()){    // mistake of .toLowerCase()
+//     console.log("character is lowercase");
+// }else{
+//     console.log("charater is not lowercase");
+// }
+
+/*  Qs5. Write a JavaScript program to strip leading and trailing spaces from a string */
+// let str  = prompt("enter a string");      //      Abhay
+// console.log(`original string = ${str}`);  // original string =      Abhay
+// console.log(`string without spaces = ${str.trim()}`);   //string without spaces = Abhay
+
+// **
+/*  Qs6. Write a JavaScript program to check if an element exists in an array or not */
+// let array = ["hello",'a',23,64,99,-6];
+// let item = 64;
+// if(array.indexOf(item) != -1){
+//     console.log("element exists in array")
+// }else{
+//     console.log("element not exists in array");
+// }
+
+
+// JavaScript part-4
+
+// // 1. for loops
+// // loop : - Used to iterate a piece of code
+// console.log("1");
+// console.log("2");
+// console.log("3");
+// console.log("4");
+// console.log("5");
+// // for(let i =1; i<=10; i++){
+// //     console.log(i);
+// // }
+
+// // for(let i = 5; i >= 1; i--){
+// //     console.log(i);
+// // }
+
+// for(let i = 10; i >= 1; i = i-3){
+//     console.log(i);
+// }
+
+// // console.log(i);   // error - i is not defined
+
+
+// // 3. print all odd numbers from 1 to 15
+// for(let i = 1; i <= 15; i +=2){
+//     console.log(i);
+// }
+// console.log("backwards");
+// for(let i = 15; i >= 1; i -= 2){
+//     console.log(i);
+// }
+
+
+// // 4. print all even numbers from 2 to 10
+// for(let i = 2; i<=10; i +=2){
+//     console.log(i);
+// }
+// console.log("backwards");
+// for(let i = 10; i>=2; i = i-2){
+//     console.log(i);
+// }
+
+// // 5. Infinite Loops
+// for(let i =1; ; i++){
+//     console.log(i);
+// }
+
+// // 6. print Multiplication table
+
+// // for(let i=5; i<=50; i+=5){
+// //     console.log(i);
+// // }
+
+// let n = prompt("Write your number");  // there is stirng inside prompt, not numbet
+// n = parseInt(n);
+// for(let i = n; i <= n*10; i=i+n){
+//     console.log(i);
+// }
+
+
+// // 7. Nested for loop
+// for(let i =1; i<=3; i++){
+//     console.log(`Outer loop ${i}`);
+//     for(let j=1; j<=3; j++){
+//         console.log(j);
+//     }
+// }
+
+
+// // 8. While loops
+// // let i = 1;
+// // while(i<5){
+// //     console.log(i);
+// //     i++;
+// // }
+
+// let i = 0;
+// while(i<=20){
+//     console.log(i);
+//     i+=2;
+// }
+
+
+// 9. Favourite Movie
+// user need to guess the movie till then he will not guessed the right movie name
+let fav_movie = "Avatar";
+let guess = prompt("Guess my favourite movie");
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 
