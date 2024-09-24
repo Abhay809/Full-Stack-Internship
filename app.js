@@ -616,12 +616,119 @@
 // }
 
 
-// 9. Favourite Movie
-// user need to guess the movie till then he will not guessed the right movie name
-let fav_movie = "Avatar";
-let guess = prompt("Guess my favourite movie");
+// // 9. Favourite Movie
+// // user need to guess the movie till then he will not guessed the right movie name
+// const fav_movie = "avatar";
+// let guess = prompt("Guess my favourite movie");
+// let quit;
+// while(guess!=fav_movie){
+//     if(guess== "quit"){
+//         console.log("you quit");
+//         break;
+//     }
+//     guess = prompt( "wrong movie guessed. please try again!!");
+// }
+// if(guess == fav_movie){
+//     console.log("congrats!!");
+// }
+
+// // 10. break keyword
+// // loop execution stop
+// let i = 1;
+// while(i<=5){
+//     if(i==3){
+//         break;
+//     }
+//     console.log(i);
+//     i++; 
+// }
+// console.log("we use break at 3"); 
 
 
+// // 11. Loops with Arrays
+// let fruits = ["mango","apple","banana","lichi","orange"];
+// fruits.push("pineapple");
+// // for(let  i = 0; i<fruits.length;i+=2){
+// //     console.log(i,fruits[i]);
+// // }
+
+// // // reverse the above array
+// for(let i = fruits.length-1; i >=0; i--){
+//     console.log(i,fruits[i]);
+// }
+
+
+// // 12. Loops with nested Arrays
+// let heroes = [["ironman","spiderman","thor"],["superman","wonder women","flash"]];
+// // i = 0  -  ["ironman","spiderman","thor"],  i=1 :- ["superman","wonder women","flash"]
+// for(let i =0; i<heroes.length; i++){
+//     console.log(i,heroes[i],heroes.length);
+//     for(let j=0; j<heroes[i].length;j++){
+//         console.log(`j=${j}, ${heroes[i][j]}`);
+//     }
+// }
+
+// let student = [["aman",95],["abhay",94.4],["karan",100]];
+//  for(let i=0; i<student.length;i++){
+//     console.log(`info of sudent #${i+1}`);
+//     for(let j=0;j<student[i].length;j++){
+//         console.log(student[i][j]);
+//     }
+//  }
+
+
+// // 13. for-of loop : used when we have to excess collection items
+// // ex: to excess array's individual items or to excess string indivial characters
+
+// let fruits = ["mango","apple","banana","orange","lichi"];
+
+// for(fruit of fruits){     // fruit is a variable
+//     console.log(fruit);
+// }
+
+// for(char of "abhaymittal"){
+//     console.log(char);
+// }
+
+
+// // 14.Nested for of loop
+// let heroes = [["superman","batman","wonder women"],["spiderman","ironman","thor"]];
+//  for(list of heroes){
+//     console.log(list);
+//     for(name of list){
+//         console.log(name);
+//     }
+//  }
+
+// // 15. Todo App 
+// let todo  = [];   // make a empty array
+// let req = prompt("please enter your request");  
+
+// while(true){   // so that user can enter again and agian
+//     if(req == "quit"){
+//         console.log("quitting app");
+//         break;
+//     }
+
+//     if(req == "list"){
+//         console.log("-------------");
+//         for(let i=0;i<todo.length;i++){   // to list the all items of the array, we can use for of, for or while loop  
+//             console.log(i,todo[i]);
+//         }
+//         console.log("-------------");
+//     }else if(req == "add"){
+//         let task = prompt("please enter the task you want to add");
+//         todo.push(task);
+//         console.log("task added");
+//     }else if(req == "delete"){
+//         let idx = prompt("please enter the task index");
+//         todo.splice(idx,1);  // by using splice method, we can delete a perticular index
+//         console.log("task deleted");
+//     }else{
+//         console.log("wrong request");
+//     }
+//     req = prompt("please enter your request"); 
+// }
 
 
 
