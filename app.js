@@ -731,14 +731,72 @@
 // }
 
 
+// Js part-4 questions
+
+// /* Qs1. Write a JS program to delete all occurrences of element ‘num’ in a given array.
+//  Example: if arr=[1,2,3,4,5,6,2,3]&num=2
+//  Result should be arr=[1,3,4,5,6,3] */
+
+//  let arr = [1,2,3,4,5,6,2,3];
+//  let num = 2;
+//  for(let i = 0; i< arr.length;i++){
+//     if(arr[i] == num){
+//         arr.splice(i,1);
+//     }
+//  }
+//  console.log(arr);
+
+// /*  Qs2. Write a JS program to find the no of digits in a number.
+//  Example: ifnumber=287152,count=6 */
+
+// //  let number = 287152;
+// //  let count = 0;
+// //  let c;
+// //  for(let i =1; i<number.length;i++){
+// //     c = count++;
+// //  }
+// //  console.log(c);
+// // // wrong
+
+// let number = 287152;
+// let count = 0;
+// let copy = number;
+// while(copy>0){
+//     count++;
+//     copy= Math.floor(copy/10);
+// }
+// console.log(count);
+
+// /* q-3 write js program to find sum of digits of a number
+// if number = 287152, sum = 25
+
+// */
+
+// let number = 287152;
+// let sum = 0;
+// let copy = number;
+// while(number>0){
+//     sum+=number%10;
+//     // number/=10;   wrong
+//     number  = Math.floor(number/10);
+// }
+// console.log(sum);
 
 
+// // q-4 print factorial of a number
+// let num = 7;
+// let fact = 1;
+// for(let i = 1; i<=num;i++){
+//     fact = fact*i;
+// }
+// console.log(`factorial of ${num} is ${fact}`);
 
-
- 
-
-
-
-
-
-
+// // q-5  find the largest number in the array with only positive integers
+// let arr = [1,2,3,4,5,6,9,8];
+// let max = 0;
+// for(let i = 0; i<arr.length-1;i++){
+//     if(arr[i]>max){
+//         max = arr[i];
+//     }
+// }
+// console.log(max);
