@@ -981,7 +981,7 @@
 // console.log(step3);   // 8
 // console.log(Math.floor(Math.random()*10));  // 1
 // console.log(Math.floor(Math.random()*10)+1);  // 10 may come now
-
+// console.log(Math.floor(Math.random()*6)+1);
 
 // // 11. Practise questions
 // // q-1 generate a random number between 1 to 100
@@ -997,8 +997,6 @@
 // const max = prompt("enter the max number");
 
 // const random = Math.floor(Math.random() * max) + 1;
-
-
 // let guess = prompt("guess the number");
 
 // while(true){
@@ -1036,7 +1034,84 @@
     
 // };
 // console.log(car.name);
+// console.log(car["name"]);
 
+// // q-3 Create an object person with their name, age and city.
+// // Edit their city's original value to chage it to "New York".
+// // Add a new property country and set it to the United States
+
+// const person = {
+//     name : "Abhay Mittal",
+//     age : 19,
+//     city : "Jaipur"
+// };
+// console.log(person.city = "New York");
+// person.country = "United States";
+// console.log(person);
+
+
+// JavaScript Part - 6
+
+
+// // 1. Functions in js (what are functions)
+// // Block of code to perform a perticular work
+// // function helps to save time to write a piece of code again and again
+// // till now (console.log, arr.push, arr.pop) are also functions
+
+// function hello(){
+//     console.log("hello");
+// }
+// hello();  // it will print hello to console
+
+// function printName(){
+//     console.log("apna college");
+//     console.log("shradha khapra");
+// }
+
+// // if else in function
+// function isAdult(){
+//     let age = 18;
+//     if(age>=18){
+//         console.log("adult");
+//     }else{
+//         console.log("not adult");
+//     }
+
+// }
+// isAdult();
+
+// // loop in function
+// function print1to5(){
+//     for(let i=0; i<=5; i++){
+//         console.log(i);
+//     }
+// }
+// print1to5();
+
+
+// // 2. Practise qs-1
+// // Create a function that prints a poem
+// function printPoem(){
+//     console.log("twinkle Twinkle, little star");
+//     console.log("how I worder what you are");
+// }
+// printPoem();
+
+
+// // 3. Practise qs-3
+// // create a function to roll a dice & always display the value of dice (1 to 6)
+// // To generate a random number 
+// // Math oject's random function we use
+// // console.log(Math.floor(Math.random()*6)+1);
+// function rollDice(){
+//     let random = Math.floor(Math.random() * 6) + 1;
+//     console.log(random);
+
+// }
+// rollDice();
+// rollDice();
+// rollDice();
+// rollDice();
 
 
 
