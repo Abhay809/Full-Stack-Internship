@@ -800,3 +800,245 @@
 //     }
 // }
 // console.log(max);
+
+
+
+// JavaScript part-5
+
+// 1. object Literals
+// array - collection of data items
+// object literals : used to store keyed collection & complex entities.
+
+// // 2. Creating Object Literals
+// const student = {       // let,const - keyword, student - variable
+//     // why it is const : because we don't want to change student object value
+//     // we can change its inside values
+//     name : "abhay",
+//     age : 19,
+//     marks : 94.4
+// };
+// // In array, we can also define
+// // but here no more clarity then object literal
+// let student2 = ["abhay",19,94.4];
+// const item = {
+//     price: 100.99,
+//     discount: 50,
+//     colours : ["red","pink"]   
+//     // we can also store no primitive data type in object litrerals
+// };
+
+// // 3. Creating a post
+// const post = {
+//     username: "@abhaymittal",
+//     content: "This is my #fisrtPost",
+//     likes: 150,
+//     reposts: 5,
+//     tags: ["@apnacollege","@delta"]
+// };
+
+// // 4. Get values - How to get our object value
+// const post = {
+//     username: "@abhaymittal",
+//     content: "This is my #fisrtPost",
+//     likes: 150,
+//     reposts: 5,
+//     tags: ["@apnacollege","@delta"]
+// };
+// console.log(post["content"]);
+// // console.log(post[content]); // Not applicable - it is considering content as a variable
+// console.log(post["likes"]);
+// console.log(post.content);
+// // likes and constent are the keys not string, but mention as string here
+// let prop = "reposts";
+// console.log(post[prop]);  // 5
+// console.log(post.prop);  // undefined
+
+
+// // 5. conversion in get values
+// // Js automatically converts objects keys to strings
+// // even if we made the number as a key, the number will be converted to string.
+
+// const obj = {
+//     1: "a",  // prop: "key",  // ouput of obj[1] = 'a' 
+//     // here obj[1] , 1 is not index or number, its a string
+//     2: "b",
+//     true: "c",   // these are string inside object 
+//     null: "d",
+//     undefined: "e"
+// }
+
+// // // 6. Add_update values
+// const student = {
+//     name: "abhay",
+//     age: 19,
+//     marks: 94.4,
+//     city: "delhi"
+// }
+// console.log(student);
+// // now we have to change city
+// console.log(student.city="mumbai");
+// console.log(student);
+// // To add a new property
+// console.log(student.gender = "male");
+// console.log(student);
+// // To change marks to A
+// console.log(student.marks = "A");
+// console.log(student);
+// console.log(student.marks = [99,89,74]);
+// console.log(student);
+// // to delete a key
+// console.log(delete student.marks);
+// console.log(student);
+
+// // 7. Nested Object - Object of Objects
+// const classInfo = {
+//     aman: {
+//         grade: "A+",
+//         city: "Delhi"
+//     },
+//     abhay: {
+//         grade: "A",
+//         city: "pune"
+//     },
+//     karan:{
+//         grade: "o",
+//         city: "Mumbai"
+//     }
+// };
+// console.log(classInfo);
+// console.log(classInfo.abhay);
+// console.log(classInfo.abhay.city);
+// // update abhay city
+// classInfo.abhay.city = "banglore";
+// console.log(classInfo.abhay.city);
+// console.log(classInfo.abhay);
+
+// // 8. Array of Objects - a array which has multiple objects
+// const classInfo2 = [
+//     {
+//         name: "aman",
+//         grade: "A+",
+//         city: "pune"
+//     }, 
+//     {
+//         name: "abhay",
+//         grade: "A",
+//         city: "pune"
+//     },
+//     {
+//         name: "karan",
+//         grade: "0",
+//         city: "Mumbai"
+//     }
+// ];
+// console.log(classInfo2);
+// console.log(classInfo2[0]);
+// console.log(classInfo2[1]);
+// console.log(classInfo2[2]);
+// console.log(classInfo2[2].name);
+// console.log(classInfo2[2].city = "gurgaon"); 
+// console.log(classInfo2[2]);
+// console.log(classInfo2[0].gender = "male");
+// console.log(classInfo2[0]);
+
+
+// // 9. Math object
+// console.log(Math.PI);
+// console.log(Math.E);
+// // Math.abs gives absolute value
+// console.log(Math.abs(12));
+// console.log(Math.abs(-12));
+// console.log(Math.abs(-12.5));
+// // Math.pow gives a**b;
+// console.log(Math.pow(2,4));
+// console.log(Math.pow(2,5));
+// //Math.floor - gives <= value
+// // gives nearest smallest integer value
+// console.log(Math.floor(5));
+// console.log(Math.floor(5.5));
+// console.log(Math.floor(5.99999999));
+// console.log(Math.floor(-5));
+// console.log(Math.floor(-5.5));
+// // Math.ceil(n) - >=  value
+// // gives largest integer value
+// console.log(Math.ceil(5)); // 5
+// console.log(Math.ceil(5.5));  // 6
+// console.log(Math.ceil(5.99999999));  //6 
+// console.log(Math.ceil(-5));   // -5
+// console.log(Math.ceil(-5.5));  // -5
+// // Math.random - gives any random value between 0 to 1 
+// // 1 exclusive
+// console.log(Math.random());  // -5
+
+
+// // 10. Random integers  from 1 to 10
+// // but it never return 10 afer multiplying 10 
+// let step1 = Math.random();
+// console.log(step1);   // 0.8400572233364838
+// let step2 = step1*10;  // numbers between 1 to 10 range
+// console.log(step2);   // 8.400572233364837
+// let step3 = Math.floor(step2);
+// console.log(step3);   // 8
+// console.log(Math.floor(Math.random()*10));  // 1
+// console.log(Math.floor(Math.random()*10)+1);  // 10 may come now
+
+
+// // 11. Practise questions
+// // q-1 generate a random number between 1 to 100
+// console.log(Math.floor(Math.random()*100)+1);
+// // q-2 Generate a random number between 1 to 5
+// console.log(Math.floor(Math.random()*5)+1);
+// // q-3 Generate number between 21 to 25
+// console.log(Math.floor(Math.random()*5)+21);
+
+
+// // // 12. Guessing Game
+// // user enters a max number & then tries to guess a random generated number between 1 to max
+// const max = prompt("enter the max number");
+
+// const random = Math.floor(Math.random() * max) + 1;
+
+
+// let guess = prompt("guess the number");
+
+// while(true){
+//     if(guess == "quit"){
+//         console.log("user quit");
+//         break;
+//     }
+//     if(guess == random){
+//         console.log("you are right! congrats!! random number was",random);
+//         break;
+//     }else if(guess < random){
+//         guess = prompt("hint: your guess was too small! plese try again");
+//     }else{
+//         guess = prompt("hint: your guess was too large! plese try again");
+//     }
+//     // }else{
+//     //     guess = prompt("your guess was wrong! plese try again");
+//     // }
+
+// }
+
+// 13. Js part 5 practise questions
+
+// // q-1 create a program that generate a random number representing a dice roll
+// // (The number should be 1 to 6)
+// let diceRoll = Math.floor(Math.random()*5 + 1);
+// console.log(diceRoll);
+
+// // q-2 Create an object that representing a car that stores the following properties of car: name, model,color
+// // print the car's name
+// const car = {
+//     name : "mercedes",
+//     model : "g5",
+//     colour: "black"
+    
+// };
+// console.log(car.name);
+
+
+
+
+
+
