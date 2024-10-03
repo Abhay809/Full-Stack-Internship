@@ -1114,6 +1114,56 @@
 // rollDice();
 
 
+// // 4. Functions with Arguments
+// /* 
+//     Values we pass to the function
+//     function funcName(arg1, arg2..){   // we can also call this paramenter
+//         // do something
+//     } 
+// */
+
+// function printName(){
+//     console.log("Abhay Mittal");
+// }
+// printName();
+
+// function printName1(name,age){  // name,age just like variables
+//     console.log(`${name}'s age is ${age}.`);
+// }
+// printName1("Abhay Mittal",19);
+// printName1("Shubham Mittal",15);
+// printName1("Rishu Singhal");
+// // * Here Abhay Mittal is a parameter which stores in name argument.
+
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// sum(1,2);
+// sum(4,5);
+// sum(7,8);
+
+
+// // 5. Practise q-3
+// function calcAvg(a,b,c){
+//     let avg = (a+b+c)/3;
+//     console.log(avg);
+// }
+// calcAvg(2,4,6);
+
+// // 6. Practise q-4
+// // q - Create a function that prints the multiplication table of a number
+// function printTable(n){
+//     // for(let i=1; i<=10; i++){
+//     //     console.log(n*i);
+//     // }
+//     for(let i=n; i<=n*10; i+=n){ 
+//         console.log(i);
+//     }
+// }
+// printTable(78);
+
+
+
 
 
 
