@@ -1162,6 +1162,29 @@
 // }
 // printTable(78);
 
+// // 7. Return Keyword
+// // used to return some value from the function
+// // input -  function  -  output
+// function sum(a,b){
+//     console.log("hello");
+//     return a+b;
+//     console.log("hello"); 
+// }
+// // let s = sum(3,4);
+// // console.log(sum);
+// console.log(sum(3,4));  
+// console.log(sum(sum(3,4),5));  
+
+// function isAdult(age){
+//     if(age>=18){
+//         return "adult";
+//     }else{
+//         return "Not adult";
+//     }
+//     console.log("Not reachable code");
+// }
+// console.log(isAdult(23));
+
 
 
 
