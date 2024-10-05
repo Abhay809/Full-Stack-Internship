@@ -1185,7 +1185,102 @@
 // }
 // console.log(isAdult(23));
 
+// // 8. Practise q-5
+// // create a function that returns the sum of numbers from 1 to n
+// function sum(n){
+//     let sum = 0;
+//     for(let i=0;i<=n;i++){
+//         sum+=i;
+//     }
+//     return sum;
+// }
+// console.log(sum(10));
+// console.log(sum(1000));
 
+
+// // 9. Practise question 6
+// // Create a function that returns the concatenation of all string in an array
+// let str = ["hi","hello","bye","!"];
+
+// function concat(str){
+//     let result = "";
+//     for(let i=0; i<str.length; i++){
+//         result += str[i];
+//     }
+//     return result;
+// }    
+// console.log(concat(str));
+
+// // 10. What is scope
+// // Scope :- Scope determines the accessibility of variables, objects and functions from differenet parts of code
+// // 1. function  2. block  3. lexical
+// // global scope
+
+// // Function Scope
+// // Varibles defined inside a function are not accessible(visible) from the function
+// let sum = 54;  // Global Scope
+// function calSum(a,b){
+//     let sum = a+b;  // Function Scope - more specific
+//     console.log(sum);
+//     // Global scope can be used here also
+// }
+// calSum(1,2);
+// console.log(sum);  // sum cannot be used outside the function
+
+
+// // 11. Block Scope
+// // Varible declare inside a {} block cannot be accessed from outside the block
+// // apply only let and const, not on var
+// {
+//     let a = 25;
+//     const b = 45;
+//     var c  = 89;
+// }
+// // console.log(a);  // not defined 
+// // console.log(b);  // Not defined
+// console.log(c);  // 89
+
+// let age = 25;
+// if(age>=18){
+//     let str = "adult";
+// }
+// console.log(str);
+
+
+// // 12. Lexical Scope
+// // a varible defined outside a function can be accessible inside another function defined after the variable declaration
+// // The opposite is not true
+// function outerFunc(){
+//     function innerFunc(){   // function scope
+//         let a = 10;  
+//         console.log(x);  // before varible declararion we can also use it
+//         console.log(y);  // this is called ** hoisting  **
+//     }
+//     let x = 5;
+//     let y = 6;
+//     // console.log(a); // it is not possible to access
+//     // function innerFunc(){
+//     //     console.log(x);
+//     //     console.log(y);
+//     // }
+//     innerFunc();
+// }
+// console.log(outerFunc());
+
+
+// // 13. practise q-7
+// let greet = "hello";  // Global scope
+// function changeGreet(){
+//     let greet = "namaste";  // Function scope
+//     console.log(greet);
+//     function innerGreet(){
+//         console.log(greet);  // lexical scope
+//     }  // we didn't call innerGree
+// }
+// console.log(greet);  // 1st it will print hello
+// changeGreet();  // function call
+// // output : hello
+// //          nameste
 
 
 
